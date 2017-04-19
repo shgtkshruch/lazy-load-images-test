@@ -1,0 +1,1 @@
+!function(){"use strict";var t=Layzr();document.addEventListener("DOMContentLoaded",function(){t.update().check().handlers(!0)}),document.querySelectorAll("img").forEach(function(t){t.height=t.width*t.dataset.ratio})}();
