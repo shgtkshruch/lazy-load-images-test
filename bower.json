@@ -1,0 +1,6 @@
+{
+  "name": "lazy-load-images-test",
+  "dependencies": {
+    "normalize-css": "*"
+  }
+}
