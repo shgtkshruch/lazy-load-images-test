@@ -1,6 +1,8 @@
 {
   "name": "lazy-load-images-test",
   "dependencies": {
-    "normalize-css": "*"
+    "normalize-css": "*",
+    "vanilla-lazyload": "^7.2.1",
+    "layzr.js": "layzrjs#^2.2.2"
   }
 }

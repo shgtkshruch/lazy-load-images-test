@@ -1,0 +1,11 @@
+extends layout
+
+block title
+  title lazy load images test | normal
+
+block body
+  h1
+    a(href="/") lazy load images test
+
+  - for (var i = 0; i < 10; i++)
+    img(src=`images/common/img-${i+1}.jpg` alt="image")

@@ -1,0 +1,27 @@
+extends layout
+
+block title
+  title lazy load images test | lazy
+
+block body
+  h1
+    a(href="/") lazy load images test
+  - const imgs = [];
+  - imgs[0] = {height: 675};
+  - imgs[1] = {height: 800};
+  - imgs[2] = {height: 801};
+  - imgs[3] = {height: 899};
+  - imgs[4] = {height: 800};
+  - imgs[5] = {height: 696};
+  - imgs[6] = {height: 837};
+  - imgs[7] = {height: 800};
+  - imgs[8] = {height: 800};
+  - imgs[9] = {height: 675};
+  - for (var i = 0; i < 10; i++)
+    img(data-normal=`images/common/img-${i+1}.jpg` alt="image" data-ratio=`${imgs[i].height / 1200}`)
+
+block script
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/layzr.js/2.2.2/layzr.min.js')
+  // build:js scripts/app.js
+  script(src='scripts/app.js')
+  // endbuild
